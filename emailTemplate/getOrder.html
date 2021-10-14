@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>下单</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    .container {
+      width: 100%;
+      margin: 0 auto;
+      border: 1px solid #D7D7D7;
+      border-bottom: none;
+      font-size: 14px;
+      color: #666;
+      box-sizing: border-box
+    }
+
+    .title {
+      color: #333
+    }
+
+    .box {
+      padding: 31px 36px;
+      border-bottom: 1px solid #D7D7D7;
+    }
+
+    .box .goods {
+      margin-top: 25px;
+    }
+
+    .box .goods table tr {
+      height: 90px;
+    }
+
+    .box .goods:last-child {
+      border: none
+    }
+
+    .viewOrder {
+      margin: 33px 0 18px 0;
+      width: 552px;
+      height: 48px;
+      line-height: 48px;
+      background: rgba(17, 142, 233, 1);
+      color: #fff;
+      text-align: center;
+      cursor: pointer;
+      font-size: 18px;
+    }
+
+    .clear::after {
+      clear: both;
+      content: '';
+      display: table
+    }
+
+    p {
+      line-height: 20px;
+      word-break: break-word
+    }
+
+    .text {
+      width: 238px;
+      color: #666;
+    }
+
+    a {
+      text-decoration: none;
+      color: #118EE9;
+      word-break: break-word
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      table-layout: fixed;
+    }
+
+    table tr {
+      /* border-bottom: 1px solid #D7D7D7 */
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="box">
+      <p style="height:24px;
+        font-size:17px;
+        font-family:PingFangSC-Medium;
+        color:rgba(0,0,0,0.85);
+        line-height:33px;">
+        您好，{{SKRRZ}}
+      </p>
+      <p style="margin-top:16px;font-size:16px;color:#333333;line-height:22px;">{{2018年12月3日17:00}}，{{Kerry Halling}}
+        在您的店铺下了订单
+      </p>
+      <div class="goods">
+        <table>
+          <tr>
+            <td style="width:80px;">
+              <img src="https://hn-img-mall-1.oss-cn-shenzhen.aliyuncs.com/uploader/b53180dcf3e40d4135000f7809ac2476a42c18a8.png"
+                width="60" height="60px" alt="">
+            </td>
+            <td>
+              <p class="title" style="font-weight:bold;color:#333">{{1}}x （{{Buy 2 FREE Shipping}}）{{Best Xmas
+                Gifts-BoneTech Earphones Non Ear Plug Headphones - ONYX BLACK}} (SKU: {{HB21822641HEI3}}) for
+                {{$}}{{16.99}} each</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="width:80px;">
+              <img src="https://hn-img-mall-1.oss-cn-shenzhen.aliyuncs.com/uploader/b53180dcf3e40d4135000f7809ac2476a42c18a8.png"
+                width="60" height="60px" alt="">
+            </td>
+            <td>
+              <p class="title" style="font-weight:bold;color:#333">
+                1x （Buy 2 FREE Shipping）Best Xmas Gifts-BoneTech Earphones Non Ear Plug Headphones - ONYX BLACK (SKU:
+                HB21822641HEI3) for $16.99 each
+              </p>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <p style="margin-bottom:15px;">
+        <a href="" style="color:#1C8FFF;text-decoration: underline;font-size: 16px">查看订单</a>
+      </p>
+      <div>
+        <h3 style="color:#333;line-height:22px;">Payment processing method:</h3>
+        <p style="color:#333;margin: 8px 0 16px 0">Paypal</p>
+        <h3 style="color:#333;line-height:22px;">Delivery method:</h3>
+        <p style="color:#333;margin: 8px 0 16px 0">Standard Shipping (12-20 days)</p>
+        <h3 style="color:#333;line-height:22px;">Shipping address:</h3>
+        <p style="color:#333;margin: 8px 0 16px 0;width: 240px;line-height:32px">Kerry Halling 11709 E10th Ave Spikane,
+          Washington 99206 United States (509) 230-2027</p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

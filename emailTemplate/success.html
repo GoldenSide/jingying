@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    .container {
+      width: 598px;
+      margin: 0 auto;
+      border: 1px solid #D7D7D7;
+      font-size: 14px;
+      color: #666;
+    }
+    .title{
+      color: #333
+    }
+    .box {
+      padding: 31px 24px;
+      border-bottom: 1px solid #D7D7D7;
+    }
+
+    .viewOrder {
+      margin: 33px 0 18px 0;
+      width: 552px;
+      height: 48px;
+      line-height: 48px;
+      background: rgba(17, 142, 233, 1);
+      color: #fff;
+      text-align: center;
+      cursor: pointer;
+      font-size: 18px;
+    }
+    p {
+      line-height: 20px;
+      word-break: break-word
+    }
+    .text{
+      width: 238px;
+      color: #666;
+    }
+    table{
+      border-spacing:0;
+      /* border-collapse:collapse; */
+      width:100%;
+    }
+    .count{
+      margin-top: 10px;
+    }
+    .count>tbody>tr>td{
+      padding: 10px 0
+    }
+    .count>tbody>tr>td>table td{
+      padding-bottom: 10px
+    }
+    a {
+      text-decoration: none;
+      color: #118EE9;
+      word-break: break-word
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="box">
+      <p class="title" style="line-height:45px;font-size:32px">
+        {shop name}
+      </p>
+      <p class="order_number" style="line-height:20px;margin:32px 0 16px 0">
+        ORDER {66422240C817758F0708BD2D7AD63E76}
+      </p>
+      <p class="thanks title" style="font-size:24px;line-height:33px;height:33px;margin-bottom:16px">
+        Thank you for your purchase!
+      </p>
+      <p style="color:#666666;
+      line-height:20px;">
+        Hi {name}, we're getting your order ready to be shipped. We will notify you when it has been sent.
+      </p>
+      <p class="viewOrder">View your order</p>
+      <p style="text-align:center;font-size: 16px;">or <a href="" target="_blank">View our store</a></p>
+    </div>
+    <div class="box" style="padding-bottom:10px">
+      <p style="height:33px;
+        font-size:20px;
+        font-family:PingFangSC-Medium;
+        font-weight:500;
+        color:#333;
+        line-height:33px;">
+        Order summany
+      </p>
+      <table class="goods" style="width:100%;border-bottom:1px solid #ddd;margin-top:12px;padding-bottom:12px;">
+        <tr>
+          <td style="padding:8px 0px;">
+          <p class="title"><span style="word-break: break-word">{EVE&#8482 - THE ASYMMETRIC
+              HOODIE}</span><span class="num">×{5}</span></p>
+          </td>
+          <td style="text-align:right;width:120px;padding:8px 0px;">
+          <span class="title" style="height:16px;
+          font-size:14px;line-height:16px;font-weight: 600">${450.00}</span>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding:8px 0px;">
+          <p class="title"><span style="word-break: break-word">{EVE&#8482 - THE ASYMMETRIC
+              HOODIE}</span><span class="num">×{5}</span></p>
+          </td>
+          <td style="text-align:right;width:120px;padding:8px 0px;">
+          <span class="title" style="height:16px;
+          font-size:14px;line-height:16px;font-weight: 600">${450.00}</span>
+          </td>
+        </tr>
+      </table>
+      <table class="count" style="width:100%">
+          <tr class="Subtotal">
+            <td style="width:80px;">Subtotal</td>
+            <td style="color:#333;font-weight: 600;text-align:right">
+            ${900.00}
+            </td>
+          </tr>
+          <tr class="Discount">
+          <td style="width:80px;vertical-align: top">Discount</td>
+          <td>
+            <table style="width:100%;">
+              <tr>
+              <td>
+                <div class="main" style="color:#666666"><img width="14" style="vertical-align:middle;margin-right:4px"
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAAAXNSR0IArs4c6QAAAm9JREFUSA2tlkuPTEEYhnvcYgjJLFwSJI2EDSEhsRAilli4LojY+AN2+AVYztaCDbNxi2S2InZiRZC4RNwjCBZuI67Pc6brpLr0OX36dL/J03VOXb53quqrOjPUqK/5DD0Aq2G4S5gvtN+Cc0NdOhY1N2k4BnPhJ3yFMs2hcSpcr2O4goFHwVldgzH4DmUaoXEUJqaV9erQFptdol1izeBlHryFX1HDJ54/w0gvhpq5jDPhMsRm1h2ELTAFNBsH+/yGXDZWUWx2hQEXk0GHed8K7uU90HAn7IU2VZlhanahLcLkEm6k7gMcBzPSDD4BO8DVMLEydZthbObA1Mwgi7NIjcYdSs3UO3gMZuZCyFVmmJqlyxiCmCBqJYQVm81zE/7Ce8gVOuQVrYeqZnZ/A+7bKnAZH8Aa8IzegAnI5ZRTxWZmWZyNad/wfpeHJiyHZTALbsJZMIHUdhhOD34dsywaP8ZaBAvgFYSl5jHby9OU0+Ml7cfMoO6XRpJqPxXeTLdD0vRrlhrE77t52QZef+dtWAJnYAxsHKSMZ1zjO6nsGjpE6dV0FTxrg5Jm3jRm6Ul4BJnhUh/Q+GQxkN+OZkZ2D1+3LDa3yn6LQjMDew49uJtgLXyEZ1BXuxi4D9qWMQ6moZfuc9gA66GuaTD7QYxTkO0ZZZvCTeMsY1M/mE/bepa/xGYmyMOi7sHQ9rqmlc00iQ3rmPZk1smwF9PYzD0rXEaDBqUzDPUu7wsIiZTuaWrmJ6mSigwdnJp+o+4leM72QMjGymaMyT4plmVaR+MR8I/7A14WtcwY91/SWJfKmd4Hv3V+WP1fZRSeQM/6ByvBmxHMiMXtAAAAAElFTkSuQmCC"
+                  alt="">{Free freight}</div>
+              </td>
+              <td style="width:120px;color:#333;font-weight:600;text-align:right">
+                ${900.00}
+              </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="main" style="color:#666666"><img width="14" style="vertical-align:middle;margin-right:4px"
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAAAXNSR0IArs4c6QAAAm9JREFUSA2tlkuPTEEYhnvcYgjJLFwSJI2EDSEhsRAilli4LojY+AN2+AVYztaCDbNxi2S2InZiRZC4RNwjCBZuI67Pc6brpLr0OX36dL/J03VOXb53quqrOjPUqK/5DD0Aq2G4S5gvtN+Cc0NdOhY1N2k4BnPhJ3yFMs2hcSpcr2O4goFHwVldgzH4DmUaoXEUJqaV9erQFptdol1izeBlHryFX1HDJ54/w0gvhpq5jDPhMsRm1h2ELTAFNBsH+/yGXDZWUWx2hQEXk0GHed8K7uU90HAn7IU2VZlhanahLcLkEm6k7gMcBzPSDD4BO8DVMLEydZthbObA1Mwgi7NIjcYdSs3UO3gMZuZCyFVmmJqlyxiCmCBqJYQVm81zE/7Ce8gVOuQVrYeqZnZ/A+7bKnAZH8Aa8IzegAnI5ZRTxWZmWZyNad/wfpeHJiyHZTALbsJZMIHUdhhOD34dsywaP8ZaBAvgFYSl5jHby9OU0+Ml7cfMoO6XRpJqPxXeTLdD0vRrlhrE77t52QZef+dtWAJnYAxsHKSMZ1zjO6nsGjpE6dV0FTxrg5Jm3jRm6Ul4BJnhUh/Q+GQxkN+OZkZ2D1+3LDa3yn6LQjMDew49uJtgLXyEZ1BXuxi4D9qWMQ6moZfuc9gA66GuaTD7QYxTkO0ZZZvCTeMsY1M/mE/bepa/xGYmyMOi7sHQ9rqmlc00iQ3rmPZk1smwF9PYzD0rXEaDBqUzDPUu7wsIiZTuaWrmJ6mSigwdnJp+o+4leM72QMjGymaMyT4plmVaR+MR8I/7A14WtcwY91/SWJfKmd4Hv3V+WP1fZRSeQM/6ByvBmxHMiMXtAAAAAElFTkSuQmCC"
+                    alt="">{Free freight}</div>
+                </td>
+                <td style="width:120px;color:#333;font-weight:600;text-align:right">
+                  ${900.00}
+                </td>
+                </tr>
+            </table>
+          </td>
+          </tr>
+          <tr class="Shipping">
+          <td style="width:80px;padding-bottom:20px">Shipping</td>
+            <td style="color:#333;font-weight: 600;text-align:right;padding-bottom:20px">
+            ${900.00}
+            </td>
+          </tr>
+          <tr class="Total">
+            <td style="width:80px;vertical-align: top;border-top:1px solid #DDDDDD;padding-top:20px">Total</td>
+              <td style="color:#333;font-weight: 600;text-align:right;border-top:1px solid #DDDDDD;padding-top:20px">
+                <p style="line-height:26px;font-weight: normal"><span class="title" style="height:23px;
+                  font-size:20px;
+                  font-weight: 600;
+                  margin-right:4px;
+                  font-family:ArialRoundedMTBold;
+                  vertical-align: -2px;
+                  ">${908.00}</span>{USD}</p>
+                <p style="margin-top:20px;color: #666">You saved ${20.00}</p>
+              </td>
+            </tr>
+      </table>
+    </div>
+    <div class="box">
+      <p style="height:28px;
+      font-size:20px;
+      font-family:PingFangSC-Medium;
+      font-weight:500;
+      color:#333;
+      line-height:28px;">Customer
+        information</p>
+      <p class="title" style="margin:16px 0 8px 0;font-weight: 600">Shipping address</p>
+      <p class="text">
+        {Green Chuangyungu Building, No. 38, Gaoxin North 6th Road, Nanyuan Street, Nanshan District, Shenzhen,
+        Guangdong, China}
+      </p>
+      <p class="title" style="margin:16px 0 8px 0;font-weight: 600">Billing address</p>
+      <p class="text">{Green Chuangyungu Building, No. 38, Gaoxin North 6th Road, Nanyuan Street, Nanshan District, Shenzhen,
+        Guangdong, China}</p>
+      <p class="title" style="margin:16px 0 8px 0;font-weight: 600">Shipping method</p>
+      <p class="text">{Standard}</p>
+      <p class="title" style="margin:16px 0 8px 0;font-weight: 600">Payment method</p>
+      <p class="text">{Epress}</p>
+    </div>
+    <div style="padding:30px 23px 80px 23px">
+      If you have any questions, reply to this email or contact us at <a href="" style="color:#108EE9">{xxx@gmail.com}</a>
+    </div>
+  </div>
+</body>
+</html>

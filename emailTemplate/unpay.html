@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    .container {
+      width: 598px;
+      margin: 0 auto;
+      border: 1px solid #D7D7D7;
+      border-bottom: none;
+      font-size: 14px;
+      color: #666;
+    }
+
+    .title {
+      color: #333
+    }
+
+    .box {
+      padding: 31px 24px;
+      border-bottom: 1px solid #D7D7D7;
+    }
+
+    .box .goods {
+      padding: 25px 0;
+    }
+
+    .box .goods table tr {
+      height: 80px;
+    }
+    .viewOrder {
+      margin: 33px 0 18px 0;
+      width: 552px;
+      height: 48px;
+      line-height: 48px;
+      background: rgba(17, 142, 233, 1);
+      color: #fff;
+      text-align: center;
+      cursor: pointer;
+      font-size: 18px;
+    }
+
+    .clear::after {
+      clear: both;
+      content: '';
+      display: table
+    }
+
+    p {
+      line-height: 20px;
+      word-break: break-word
+    }
+
+    .text {
+      width: 238px;
+      color: #666;
+    }
+
+    a {
+      text-decoration: none;
+      color: #118EE9;
+      word-break: break-word
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      table-layout: fixed;
+      border-bottom: 1px solid #D7D7D7
+    }
+    td img{
+      border-radius: 4px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="box">
+      <p class="title" style="line-height:45px;font-size:32px;margin-bottom:32px">
+        {{shop name}}
+      </p>
+      <p class="thanks title" style="font-size:24px;line-height:33px;height:33px;margin-bottom:16px">
+        Items in your cart
+      </p>
+      <p style="color:#666666;
+      line-height:20px;">
+        Hi {{first name}}, you added items to your shopping cart and haven't completed your purchase. You can complete
+        it now while they're still available.
+      </p>
+      <p class="viewOrder">Items in your cart</p>
+      <p style="text-align:center;font-size: 16px">or <a href="" target="_blank">View our store</a></p>
+    </div>
+    <div class="box" style="padding-bottom:10px">
+      <p style="height:33px;
+        font-size:20px;
+        font-family:PingFangSC-Medium;
+        color:rgba(0,0,0,0.85);
+        line-height:33px;">
+        Complete your purchase
+      </p>
+      <div class="goods">
+        <table>
+          <tr>
+            <td style="width:80px;text-align:center">
+              <img src="https://hn-img-mall-1.oss-cn-shenzhen.aliyuncs.com/uploader/b53180dcf3e40d4135000f7809ac2476a42c18a8.png"
+                width="60" height="60px" alt="">
+            </td>
+            <td>
+              <p class="title">{{EVE&#8482 - THE ASYMMETRIC
+                HOODIE}}×{{5}}</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="width:80px;text-align:center">
+              <img src="https://hn-img-mall-1.oss-cn-shenzhen.aliyuncs.com/uploader/b53180dcf3e40d4135000f7809ac2476a42c18a8.png"
+                width="60" height="60px" alt="">
+            </td>
+            <td>
+              <p class="title"><span style="word-break: break-all">{{EVE&#8482 - THE ASYMMETRIC
+                  HOODIE}}</span><span class="num">×{{5}}</span></p>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <p style="margin-bottom:25px;">Don’t want to receive cart reminders from us? <a href="" style="color:#108EE9">Unsubscribe</a></p>
+    </div>
+  </div>
+</body>
+
+</html>
