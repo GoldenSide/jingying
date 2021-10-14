@@ -1,4 +1,3 @@
-# oms-front
 
 > Business data platform
 
